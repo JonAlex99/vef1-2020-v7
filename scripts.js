@@ -64,7 +64,6 @@ function erEkkiISL(str){
 }
 
 function mod(n, m) {
-  console.log(n + ' ' + m);
   return ((n % m) + m) % m;
 }
 
@@ -81,8 +80,6 @@ start();
 function encode(str, n) {
   let temp = '';
   for(let i = 0; i < str.length; i++){
-    console.log(LETTERS.indexOf(str[i]));
-    console.log(n);
     temp += LETTERS[mod((LETTERS.indexOf(str[i]) + n),32)];
   }
   return temp;
